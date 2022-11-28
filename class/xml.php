@@ -3,11 +3,11 @@ require_once("err.php");
 class xml{
     private $documentxml;
     private $date;
-    private array $arrSeries;
-    private string $guid;
-    private int $TotalLineItems;
+    private $arrSeries;
+    private $guid;
+    private $TotalLineItems;
 
-    public function __construct(array $series)
+    public function __construct(array $series = [])
     {
         $this->date = date('Y-m-d');
         $this->guid = $this->guidv4();

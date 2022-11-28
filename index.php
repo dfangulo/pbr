@@ -12,6 +12,7 @@ require_once "class/xml.php";
 
     function callArray($arrArray)
     {
+        $arrArray = trim($arrArray);
         $array = explode("\r", $arrArray);
         foreach ($array as $row) {
             $arrSeries[] = explode(",", $row);
